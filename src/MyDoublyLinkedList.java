@@ -86,10 +86,11 @@ public class MyDoublyLinkedList {
         if (this.size > 0) {
             if (index == 0) {
                 this.head = this.head.next;
-                this.head.prev = null;
                 this.size--;
                 if (this.size == 0)
                     this.tail = this.head;
+                else
+                    this.head.prev = null;
             } else if (index < this.size && index > 0) {
                 DoubleNode cur = this.head;
                 for (int i = 0; i < index - 1; i++) {

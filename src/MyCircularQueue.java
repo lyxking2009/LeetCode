@@ -3,7 +3,7 @@ public class MyCircularQueue {
     private int p_start;
     private int p_tail;
     private int length;
-    private int size;
+    public int size;
 
     public MyCircularQueue(int k) {
         this.length = k;

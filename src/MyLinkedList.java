@@ -1,3 +1,6 @@
+import java.util.List;
+import java.util.ArrayList;
+
 public class MyLinkedList {
     private Node head;
     private Node tail;
@@ -94,8 +97,22 @@ public class MyLinkedList {
 class Node {
     public int val;
     public Node next;
-    public Node(int x) {
-        this.val = x;
+
+    public List<Node> neighbors;
+    public Node() {
+        val = 0;
+        neighbors = new ArrayList<Node>();
+        next = null;
+    }
+    public Node(int _val) {
+        val = _val;
+        neighbors = new ArrayList<Node>();
+        next = null;
+    }
+    public Node(int _val, ArrayList<Node> _neighbors) {
+        val = _val;
+        neighbors = _neighbors;
+        next = null;
     }
 }
 

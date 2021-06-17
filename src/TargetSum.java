@@ -1,3 +1,5 @@
+import java.util.HashMap;
+
 class TargetSum {
     int len;
     
